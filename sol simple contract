@@ -1,0 +1,27 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+
+contract simplecontract{
+    string name;
+    uint uid;
+    address ethaddress;
+
+    function setName(string memory _name)public {
+        name=_name;
+    }
+    function getName()public view returns(string memory){
+        return name;
+
+    }
+    function setUid(uint _uid)public {
+        uid=_uid;
+    }
+    function getUid() public view returns (uint){
+        return uid;
+    }
+    function setethaddress(address _ethaddress)public {
+        ethaddress = _ethaddress;
+    }
+    function setethaddress()public view returns(address){
+        return ethaddress;
+    }}
